@@ -1,0 +1,17 @@
+{
+    "require": {
+        "symfony/dependency-injection": "^5.4",
+        "symfony/config": "^5.4",
+        "symfony/yaml": "^5.4",
+        "symfony/string": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Services\\": "src"
+        },
+        "classmap": ["src"]
+    },
+    "require-dev": {
+        "symfony/test-pack": "^1.1"
+    }
+}
