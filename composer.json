@@ -1,6 +1,17 @@
 {
     "name": "jegeriukaspay/randomizework",
     "description": "test",
-    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Jegeriukaspay\\Randomizework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ricardas",
+            "email": "jegeriukaspay@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {}
 }

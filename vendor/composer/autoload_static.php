@@ -39,12 +39,15 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\BrowserKit\\' => 29,
             'Symfony\\Bridge\\PhpUnit\\' => 23,
-            'Services\\' => 9,
         ),
         'P' => 
         array (
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
+        ),
+        'J' => 
+        array (
+            'Jegeriukaspay\\Randomizework\\' => 28,
         ),
         'D' => 
         array (
@@ -118,10 +121,6 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         array (
             0 => __DIR__ . '/..' . '/symfony/phpunit-bridge',
         ),
-        'Services\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -129,6 +128,10 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Jegeriukaspay\\Randomizework\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -768,11 +771,6 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'Services\\ConverterPattern' => __DIR__ . '/../..' . '/src/ConverterPattern.php',
-        'Services\\ConverterRot' => __DIR__ . '/../..' . '/src/ConverterRot.php',
-        'Services\\GeneratorArray' => __DIR__ . '/../..' . '/src/GeneratorArray.php',
-        'Services\\GenertorString' => __DIR__ . '/../..' . '/src/GenertorString.php',
-        'Services\\tests\\funfunTest' => __DIR__ . '/../..' . '/src/tests/funfunTest.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
@@ -782,7 +780,6 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'TrueContainer' => __DIR__ . '/../..' . '/src/TrueContainer.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
