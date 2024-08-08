@@ -2,7 +2,7 @@
     "name": "jegeriukaspay/randomizework",
     "type": "library",
     "require": {
-        "php": "7.4",
+        "php": "^7.4",
         "symfony/dependency-injection": "^5.4",
         "symfony/string": "^5.4"
     },
