@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class TrueContainer extends ContainerBuilder {
 
-    public static function buildContainer($rootPath)
+    public static function buildContainer()
     {
         $container = new self();
         $container->setParameter('app_root', $rootPath);
