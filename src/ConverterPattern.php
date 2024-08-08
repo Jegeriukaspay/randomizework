@@ -1,5 +1,6 @@
 <?php
 
+namespace Jegeriukaspay\Randomizework;
 class ConverterPattern
 {
     private const pattern = '/^[0-9]*$/';

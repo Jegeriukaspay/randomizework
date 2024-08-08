@@ -1,5 +1,5 @@
 <?php
-
+namespace Jegeriukaspay\Randomizework;
 class GenertorString
 {
     private $limit;

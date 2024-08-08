@@ -1,5 +1,5 @@
 <?php
-
+namespace Jegeriukaspay\Randomizework;
 class ConverterRot
 {
 

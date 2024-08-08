@@ -1,6 +1,10 @@
 <?php
-require_once(__DIR__.'/../vendor/autoload.php');
+require_once(__DIR__.'/vendor/autoload.php');
 
+use Jegeriukaspay\Randomizework\ConverterPattern;
+use Jegeriukaspay\Randomizework\ConverterRot;
+use Jegeriukaspay\Randomizework\GeneratorArray;
+use Jegeriukaspay\Randomizework\GenertorString;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 
@@ -76,8 +80,8 @@ class RandomArray
 
 }
 //
-//$array = (new RandomArray)->randomize(10, 15);
-//echo "<pre>";
-//print_r($array);
+$array = (new RandomArray)->randomize(10, 15);
+echo "<pre>";
+print_r($array);
 //echo "</pre>";
 
