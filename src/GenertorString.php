@@ -1,6 +1,5 @@
 <?php
 
-namespace Services;
 class GenertorString
 {
     private $limit;

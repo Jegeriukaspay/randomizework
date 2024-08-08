@@ -1,6 +1,11 @@
 {
     "name": "jegeriukaspay/randomizework",
-    "description": "test",
+    "type": "library",
+    "require": {
+        "php": "7.4",
+        "symfony/dependency-injection": "^5.4",
+        "symfony/string": "^5.4"
+    },
     "autoload": {
         "psr-4": {
             "Jegeriukaspay\\Randomizework\\": "src/"
@@ -12,6 +17,5 @@
             "email": "jegeriukaspay@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "stable"
 }

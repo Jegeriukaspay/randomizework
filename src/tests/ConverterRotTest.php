@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Services\tests;
 
 use PHPUnit\Framework\TestCase;
-use Services\ConverterRot;
 
 
 class ConverterRotTest extends TestCase
@@ -14,8 +13,8 @@ class ConverterRotTest extends TestCase
 
     public function setUp(): void
     {
-
-        $this->ConverterRot = new ConverterRot();
+        new \RandomArray();
+        $this->ConverterRot = new \ConverterRot();
     }
 
     public function tearDown(): void

@@ -45,10 +45,6 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
-        'J' => 
-        array (
-            'Jegeriukaspay\\Randomizework\\' => 28,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -129,10 +125,6 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Jegeriukaspay\\Randomizework\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -143,10 +135,18 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
+    );
+
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'ConverterPattern' => __DIR__ . '/../..' . '/src/ConverterPattern.php',
+        'ConverterRot' => __DIR__ . '/../..' . '/src/ConverterRot.php',
+        'GeneratorArray' => __DIR__ . '/../..' . '/src/GeneratorArray.php',
+        'GenertorString' => __DIR__ . '/../..' . '/src/GenertorString.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
@@ -570,6 +570,7 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'RandomArray' => __DIR__ . '/../..' . '/src/index.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
@@ -771,6 +772,7 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Services\\tests\\ConverterRotTest' => __DIR__ . '/../..' . '/src/tests/ConverterRotTest.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
@@ -780,6 +782,7 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'TrueContainer' => __DIR__ . '/../..' . '/src/TrueContainer.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
@@ -789,6 +792,7 @@ class ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit6cd4f09ec0b68c4ee59fa5731d74dbb2::$classMap;
 
         }, null, ClassLoader::class);

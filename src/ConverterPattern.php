@@ -1,5 +1,5 @@
 <?php
-namespace Services;
+
 class ConverterPattern
 {
     private const pattern = '/^[0-9]*$/';

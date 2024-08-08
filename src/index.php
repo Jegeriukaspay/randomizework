@@ -1,5 +1,5 @@
 <?php
-require_once('./vendor/autoload.php');
+require_once(__DIR__.'/../vendor/autoload.php');
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Reference;
 /**
  *
  */
-class funfun
+class RandomArray
 {
     /**
      * @var
@@ -32,16 +32,17 @@ class funfun
 
         $containerBuilder = $this->formatContainer();
         $generators = $containerBuilder->findTaggedServiceIds('app.generator');
-        $collections = [];
 
+        $collections = [];
         foreach ($generators as $generator => $info) {
             $generate = $containerBuilder->get($generator);
             $collections[] = $generate->handle();
         }
-        $converted = [];
+
         $converters = array_keys($containerBuilder->findTaggedServiceIds('app.converter'));
         $converters_count = count($converters) - 1;
 
+        $converted = [];
         foreach ($collections as $collection) {
             $selected_converter = $converters[rand(0, $converters_count)];
             $converter = $containerBuilder->get($selected_converter);
@@ -58,26 +59,25 @@ class funfun
     private function formatContainer()
     {
         $containerBuilder = new ContainerBuilder();
-        $containerBuilder->register('GeneratorString', \Services\GenertorString::class)
+        $containerBuilder->register('GeneratorString', GenertorString::class)
             ->addTag('app.generator')
             ->addArgument($this->limit);
-        $containerBuilder->register('Generator', \Services\GeneratorArray::class)
+        $containerBuilder->register('Generator', GeneratorArray::class)
             ->addTag('app.generator')
             ->addArgument($this->array_limit)
             ->addArgument(new Reference('GeneratorString'));
 
-        $containerBuilder->register('ConverterPattern', \Services\ConverterPattern::class)
+        $containerBuilder->register('ConverterPattern', ConverterPattern::class)
             ->addTag('app.converter');
-        $containerBuilder->register('ConverterRot', \Services\ConverterRot::class)
+        $containerBuilder->register('ConverterRot', ConverterRot::class)
             ->addTag('app.converter');
         return $containerBuilder;
     }
 
 }
-
-//$array = (new funfun)->randomize(1, 1);
+//
+//$array = (new RandomArray)->randomize(10, 15);
 //echo "<pre>";
 //print_r($array);
-//
 //echo "</pre>";
 
